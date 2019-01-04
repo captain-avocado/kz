@@ -1,0 +1,94 @@
+.sp__body {
+    min-height: 100vh;
+    width: 100%;
+    margin:0;
+}
+
+.sp__wrapper {
+    width: 100%;
+    font-size: rem(20);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo {
+    width: rem(120);
+    height: rem(40);
+    margin-top: rem(50);
+}
+
+.sp__greeting {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: rem(30);
+
+    .sp__greeting-top {
+        color: $main-color;
+    }
+
+    .sp__greeting-bot {
+        color: $secondary-color;
+    }
+}
+
+.login__block {
+    margin-top: rem(60);
+}
+
+.password__input, .login__input {
+    width: rem(350);
+    height: rem(40);
+    border: solid $secondary-color 1px;
+    border-radius: rem(5);
+    margin-bottom: rem(24);
+    outline: none;
+    font-size: 16px;
+    padding-left: rem(5);
+}
+
+.preloader__logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+        width: rem(212);
+    }
+
+    display: none;
+}
+
+#forgot-password {
+    color: $main-color;
+    font-size: rem(14);
+    margin-bottom: rem(60);
+}
+
+.enter__button {
+    width: rem(350);
+    height: rem(40);
+    border: none;
+    background-color: $main-color;
+    border-radius: rem(5);
+    color: white;
+    outline: none;
+    margin-bottom: rem(150);
+}
+
+.input__descr {
+    color: $main-color;
+    font-size: rem(14);
+    margin-bottom: rem(10);
+}
+
+.register__button {
+    color: $secondary-color;
+    font-size: rem(16);
+    text-decoration: none;
+}
