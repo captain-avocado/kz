@@ -50,6 +50,15 @@
             color: $main-color;
             margin-right: rem(30);
             margin-bottom: rem(30);
+            cursor: pointer;
+            transition: .3s;
+
+            &:active {
+                color: white;
+                transition: .3s;
+                background-color: $main-color;
+                
+            }
 
             &-button {
                 width: 100%;
@@ -77,6 +86,16 @@
     }
 }
 
+.active__block-item {
+    background-color: $main-color;
+}
+
 .input-icon {
     border-style: none !important;
+
+    &:active {
+        // border-radius: 50%;
+        border: 1px solid $main-color !important;
+        background-color: #fff !important;
+    } 
 }
