@@ -79,6 +79,10 @@
     color: white;
     outline: none;
     margin-bottom: rem(150);
+
+    @media (max-width: 380px) {
+        margin-bottom: rem(100);
+    }
 }
 
 .input__descr {
