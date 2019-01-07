@@ -1,0 +1,50 @@
+.pay-method {
+  display: flex;
+  align-items: center;
+  padding: rem(25) 0;
+
+  &__left-side {
+    margin-right: auto;
+  }
+
+  &__hint {
+    margin-bottom: rem(5);
+    font-size: rem(14);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-outer {
+    width: rem(50);
+    margin-right: rem(15);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    max-width: 100%;
+    max-height: rem(25);
+  }
+
+  &__svg {
+    fill: $main-color;
+
+    &_check {
+      width: rem(15);
+      height: rem(10);
+    }
+
+    &_more {
+      width: rem(15);
+      height: rem(23);
+    }
+  }
+
+  &_padding-min {
+    padding: rem(10) 0 !important;
+  }
+}

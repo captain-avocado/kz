@@ -1,0 +1,47 @@
+.payment {
+  &__block {
+    box-shadow: 0px rem(1) rem(10) rem(2) rgba(0, 0, 0, 0.16); 
+    margin: rem(20) 0;
+  }
+
+  &__comm {
+    display: flex;
+    width: 100%;
+
+    margin-bottom: rem(50);
+  }
+
+  &__comm-text_right {
+    margin-right: auto;
+  }
+
+  &__btn-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: rem(25);
+  }
+
+  &__btn {
+    border-radius: rem(5);
+    display: block;
+    width: 80%;
+    color: #fff;
+    padding: rem(15) 0;
+    text-align: center;
+    background-color: $main-color;
+  }
+
+  &__submit-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: rem(20) 0;
+    box-shadow: 0px rem(1) rem(5) rem(1) rgba(0, 0, 0, 0.16); 
+  }
+
+  &__doc {
+    color: $main-color;
+  }
+}

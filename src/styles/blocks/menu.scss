@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: rem(70);
+
+  color: $main-color;
+  box-shadow: 0px rem(2) rem(5) 0px rgba(0, 0, 0, 0.16); 
+
+  &__back {
+    display: flex;
+    align-items: center;
+  }
+
+  &__angle-left {
+    width: rem(15);
+    height: rem(23);
+    fill: $main-color;
+
+    margin-right: rem(5);
+  }
+}
+
+.menu-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

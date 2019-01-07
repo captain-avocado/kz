@@ -1,0 +1,5 @@
+.pay-methods {
+  &__item:not(:last-child) {
+    border-bottom: rem(1) solid $main-color;
+  }
+}
