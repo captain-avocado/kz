@@ -28,6 +28,10 @@
   &__icon {
     max-width: 100%;
     max-height: rem(25);
+
+    &_payment {
+      max-width: initial;
+    }
   }
 
   &__svg {

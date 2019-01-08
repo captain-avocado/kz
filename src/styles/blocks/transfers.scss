@@ -5,6 +5,10 @@
 
   &__info {
     margin-bottom: rem(25);
+    &_payment {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__card {

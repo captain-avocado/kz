@@ -16,46 +16,49 @@
         </svg>
         <div class="menu__text">Назад</div>
       </a>
-      <div class="menu__text menu-center">Перевод</div>
+      <div class="menu__text menu-center">Оплата</div>
     </div>
-    <div class="transfers__info info boxed">
-      <div class="info__title text-title">Перевод на карту</div>
-      <div class="info__text">Перевод на карты VISA, Mastercard, Maestro.
-          Срок перевода денег зависит от банка-эмитента карты
-          получателя (от нескольких секунд до 5
-          банковских дней)</div>
+    <div class="transfers__info transfers__info_payment">
+        <div class="wallet-info">
+          <div class="wallet-info__text">
+            <span class="wallet-info__text-pay">Кошелек PaysKg</span>
+            <div class="wallet-info__text-icon-outer">
+              <svg class="wallet-info__text-icon">
+                <use xlink:href="images/icons/sprite.svg#angle-top"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wallet-info__nums">
+            <span class="wallet-info__big">990</span> 
+            <span class="wallet-info__small">,90</span> 
+            <span class="wallet-info__currency">KGS</span> 
+          </div>
+        </div>
     </div>
     <div class="payment">
-      <div class="payment__title text-title boxed">Способ оплаты</div>
       <div class="payment__block payment__methods">
         <ul class="pay-methods boxed">
             <li class="pay-methods__item pay-method">
                 <div class="pay-method__left-side">
-                  <div class="pay-method__row">
-                      <div class="pay-method__icon-outer">
-                          <img class="pay-method__icon" src="./images/logo/Logo_pays_kg@2x.png"/>
-                      </div>
-                      <div class="pay-method__name">кошелек</div>
-                  </div>
-                </div>
-                <div class="pay-method__icon">
-                    <svg class="pay-method__svg">
-                        <use xlink:href="images/icons/sprite.svg#check"></use>
-                    </svg>
-                </div>
-              </li>
-              <li class="pay-methods__item pay-method">
-                  <div class="pay-method__left-side">
                     <div class="pay-method__row">
                         <div class="pay-method__icon-outer">
-                            <svg class="pay-method__icon">
-                              <use xlink:href="images/icons/sprite.svg#wallet"></use>
-                            </svg>
+                            <img class="pay-method__icon pay-method__icon_payment" src="./images/logo/megacom.png"/>
                         </div>
-                        <div class="pay-method__name">карта Тинькофф 0000</div>
                     </div>
                   </div>
-                  <div class="pay-method__icon"></div>
+                <div class="pay-method__icon">
+                    <svg class="pay-method__svg pay-method__svg_more">
+                        <use xlink:href="images/icons/sprite.svg#angle-right"></use>
+                    </svg>
+                </div>
+            </li>
+              <li class="pay-methods__item pay-method">
+                  <div class="pay-method__left-side">
+                    <div class="pay-method__hint">Имя или номер телефона</div>
+                    <div class="pay-method__row">
+                        <div class="pay-method__name payment__sum-value">+996 000 000 000</div>
+                    </div>
+                  </div>
               </li>
         </ul>
       </div>
@@ -72,8 +75,7 @@
           </ul>
       </div>
       <div class="payment__comm boxed">
-        <div class="payment__comm-text payment__comm-text_right">Комиссия</div>
-        <div class="payment__comm-text"><span class="payment__comm-value">3</span>%</div>
+        <div class="payment__comm-text payment__comm-text_right">Комиссия не взимается</div>
       </div>
       <div class="payment__btn-outer">
           <btn type="submit" class="payment__btn">Оплатить</btn>

@@ -1,0 +1,33 @@
+.wallet-info { 
+  color: $main-color; 
+
+  &__text {
+    color: $secondary-color;
+    font-size: rem(12);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-pay {
+    margin-right: rem(10);
+  }
+
+  &__text-icon {
+    width: rem(15);
+    height: rem(23);
+    fill: $secondary-color;
+  }
+  
+  &__big { 
+    font-size: rem(40); 
+  } 
+  
+  &__small { 
+    font-size: rem(20); 
+  } 
+  
+  &__currency { 
+    font-size: rem(20); 
+  } 
+} 
+  

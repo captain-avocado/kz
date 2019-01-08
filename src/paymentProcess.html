@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Document</title>
+</head>
+<body сlass="body">
+  <div class="wrapper">
+    <div class="transfers__menu menu boxed">
+      <a href="./mainpage.html" class="menu__back">
+        <svg class="menu__angle-left">
+          <use xlink:href="images/icons/sprite.svg#angle-left"></use>
+        </svg>
+        <div class="menu__text">Назад</div>
+      </a>
+      <div class="menu__text menu-center">Оплата</div>
+    </div>
+    <div class="transfers__info transfers__info_payment">
+        <div class="wallet-info">
+          <div class="wallet-info__text">
+            <span class="wallet-info__text-pay">Кошелек PaysKg</span>
+            <div class="wallet-info__text-icon-outer">
+              <svg class="wallet-info__text-icon">
+                <use xlink:href="images/icons/sprite.svg#angle-top"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wallet-info__nums">
+            <span class="wallet-info__big">990</span> 
+            <span class="wallet-info__small">,90</span> 
+            <span class="wallet-info__currency">KGS</span> 
+          </div>
+        </div>
+    </div>
+    <div class="payment">
+      <div class="payment__block payment__methods">
+        <ul class="pay-methods boxed">
+            <li class="pay-methods__item pay-method">
+                <div class="pay-method__left-side">
+                    <div class="pay-method__row">
+                        <div class="pay-method__icon-outer">
+                            <img class="pay-method__icon pay-method__icon_payment" src="./images/logo/megacom.png"/>
+                        </div>
+                    </div>
+                  </div>
+                <div class="pay-method__icon">
+                    <svg class="pay-method__svg pay-method__svg_more">
+                        <use xlink:href="images/icons/sprite.svg#angle-right"></use>
+                    </svg>
+                </div>
+            </li>
+              <li class="pay-methods__item pay-method">
+                  <div class="pay-method__left-side">
+                    <div class="pay-method__hint">Имя или номер телефона</div>
+                    <div class="pay-method__row">
+                        <div class="pay-method__name payment__sum-value">+996 000 000 000</div>
+                    </div>
+                  </div>
+              </li>
+        </ul>
+      </div>
+      <div class="payment__block payment__sum">
+          <ul class="pay-methods boxed">
+              <li class="pay-methods__item pay-method_padding-min">
+                  <div class="pay-method__left-side">
+                    <div class="pay-method__hint">Сумма</div>
+                    <div class="pay-method__row">
+                        <div class="pay-method__name payment__sum-value">0 KGS</div>
+                    </div>
+                  </div>
+                </li>
+          </ul>
+      </div>
+      <div class="payment__comm boxed">
+        <div class="payment__comm-text payment__comm-text_right">Комиссия не взимается</div>
+      </div>
+      <div class="payment__btn-outer">
+          <btn type="submit" class="payment__btn">Оплатить</btn>
+      </div>
+      <div class="payment__submit-info">
+        <div>Нажимая кнопку оплатить,</div>
+        <div>Вы соглашаетесь с <a href="#" class="payment__doc">офертой</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
