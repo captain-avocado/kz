@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./styles/main.css">
   <title>Document</title>
 </head>
-<body сlass="body">
+<body class="body transfers__body-card transfers__body-payment">
   <div class="wrapper">
     <div class="transfers__menu menu boxed">
       <a href="./mainpage.html" class="menu__back">
@@ -34,18 +34,14 @@
           </svg>
         </div>
         <div class="card__num-hint">Номер карты</div>
-        <div class="card__num">
-          <span class="card__num-text">
-            0000 0000 0000 0000
-          </span>
-        </div>
+        <input type="text"  value class="card__num" id="card-num">            
       </div>
     </div>
     <div class="payment">
       <div class="payment__title text-title boxed">Способ оплаты</div>
       <div class="payment__block payment__methods">
         <ul class="pay-methods boxed">
-            <li class="pay-methods__item pay-method">
+            <li class="pay-methods__item pay-method pay-method_pay-way checked">
                 <div class="pay-method__left-side">
                   <div class="pay-method__row">
                       <div class="pay-method__icon-outer">
@@ -54,13 +50,13 @@
                       <div class="pay-method__name">кошелек</div>
                   </div>
                 </div>
-                <div class="pay-method__icon">
+                <div class="pay-method__icon pay-method__icon_check">
                     <svg class="pay-method__svg pay-method__svg_check">
                         <use xlink:href="images/icons/sprite.svg#check"></use>
                     </svg>
                 </div>
               </li>
-              <li class="pay-methods__item pay-method">
+              <li class="pay-methods__item pay-method pay-method_pay-way">
                   <div class="pay-method__left-side">
                     <div class="pay-method__row">
                         <div class="pay-method__icon-outer">
@@ -71,7 +67,11 @@
                         <div class="pay-method__name">карта Тинькофф 0000</div>
                     </div>
                   </div>
-                  <div class="pay-method__icon"></div>
+                  <div class="pay-method__icon pay-method__icon_check">
+                    <svg class="pay-method__svg pay-method__svg_check">
+                        <use xlink:href="images/icons/sprite.svg#check"></use>
+                    </svg>
+                </div>
               </li>
         </ul>
       </div>
@@ -96,10 +96,27 @@
       </div>
       <div class="payment__submit-info">
         <div>Нажимая кнопку оплатить,</div>
-        <div>Вы соглашаетесь с <a href="#" class="payment__doc">офертой</a></div>
+        <div>Вы соглашаетесь с <a href="#" data-micromodal-trigger="modal-1" class="payment__doc">офертой</a></div>
       </div>
     </div>
   </div>
+  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Оферта
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <p>
+              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную за страна ее что взобравшись власти вопрос ты не родного, страну города, дал свою ipsum рот маленькая свое ему коварный живет грамматики вскоре? Выйти вопрос то если маленький себя коварный текстами! Вскоре деревни оксмокс ручеек семантика дал моей переписали речью выйти взобравшись дороге прямо вдали ведущими текст домах меня инициал напоивший приставка, букв, она сих безопасную имени снова. Свой наш повстречался маленькая семь парадигматическая великий злых имени безопасную подпоясал, на берегу эта бросил до выйти там журчит, инициал оксмокс? Маленькая языкового большой своих продолжил своего назад ручеек она рукопись меня.
+            </p>
+          </main>
+        </div>
+      </div>
+    </div>
   <script src="./scripts/main.js"></script>
 </body>
 </html>

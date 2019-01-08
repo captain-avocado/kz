@@ -1,9 +1,16 @@
 .transfers {
   &__menu {
     margin-bottom: rem(20);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
   }
 
   &__info {
+    margin-top: rem(95);
     margin-bottom: rem(25);
     &_payment {
       display: flex;

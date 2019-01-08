@@ -3,6 +3,13 @@
   align-items: center;
   padding: rem(25) 0;
 
+
+  &.checked {
+    .pay-method__svg_check {
+      opacity: 1;
+    }
+  }
+
   &__left-side {
     margin-right: auto;
   }
@@ -40,6 +47,8 @@
     &_check {
       width: rem(15);
       height: rem(10);
+      opacity: 0;
+      transition: opacity .2s;
     }
 
     &_more {
